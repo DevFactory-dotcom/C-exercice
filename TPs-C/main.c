@@ -2,6 +2,8 @@
 #include <math.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdbool.h>
+#include <string.h>
 
 /* TP2 Exercice 1 */
 
@@ -264,23 +266,123 @@
 
 /* TP4 exercice 4 */
 
-int main(){
-    srand(time(NULL));
+// int main(){
+//     srand(time(NULL));
 
-    int random = rand() % 1001;
-    int choice;
+//     int random = rand() % 1001;
+//     int choice;
+//     int compt = 0;
+    
+//     printf("%d" ,random);
 
-    while (choice != random){
-        printf("Veuillez donner votre nombre : ");
-        scanf("%d", &choice);
+//     while (choice != random){
+//         printf("Veuillez donner votre nombre : ");
+//         scanf("%d", &choice);
+        
+//         if (choice < random){
+//             printf("C'est plus grand !\n");
+//             compt += 1;
+//         } else if (choice > random){
+//             printf("C'est plus petit !\n");
+//             compt += 1;
+//         }
+//     }
+    
+//     printf("Bravo la réponse était : %d.Vous l'avez fait en %d essais", random, compt);
+    
+// }
 
-        if (choice < random){
-            printf("C'est plus grand !\n");
-        } else if (choice > random){
-            printf("C'est plus petit !\n");
-        }
-    }
+/* TP5 exercice 1 */
 
-    printf("Bravo la réponse était : %d\n", random);
 
-}
+// void facto();
+
+// void facto(){
+    
+//     int value;
+    
+//     printf("La valeur de la factorielle que vous voulez calculé : ");
+//     scanf("%d", &value);
+    
+//     int base = value;
+//     int compteur = value - 1;
+    
+//     while (compteur > 0){
+//         value *= compteur;
+//         compteur -= 1;
+//     };
+    
+//     printf("%d! = %d\n", base, value);
+//     return 0;
+    
+// }
+
+// int main(){
+//     facto();
+// }
+
+/* TP5 exercice 2 */
+
+// void est_premier();
+
+// void est_premier(){
+//     int number;
+//     bool premier = true;
+
+//     printf("Donnez nous la valeur que vous voulez verifier : ");
+//     scanf("%d", &number);
+
+//     if (number < 2){
+//         printf("Non premier");
+//     }
+
+//     for (int i = 2; i < number; i++){
+//         if (number % i == 0){
+//             premier = false;
+//         }
+//     }
+
+//     if (premier){
+//         printf("C'est un nombre premier");
+//     } else {
+//         printf("Non premier");
+//     }
+// }
+
+// int main(){
+//     est_premier();
+// }
+
+/* TP5 exercice 3 */
+
+// void palindrome();
+
+// void palindrome(){
+//     char chaine[100];
+//     char inverse[100];
+//     int longueur;
+//     int j = 0;
+//     int pal = 0;
+
+
+//     printf("Donnez nous la phrase que vous voulez verifier : ");
+//     scanf("%s", chaine);
+
+//     longueur = strlen(chaine);
+
+//     for (int i = longueur - 1; i >= 0; i--){
+//         inverse[j] = chaine[i];
+//         j++;
+//     }
+
+//     if (strcmp(inverse, chaine) == 0){
+//         pal = 1;
+//         printf("%d", pal);
+//     } else {
+//         printf("%d", pal);
+//     }
+// }
+
+// int main(){
+//     palindrome();
+// }
