@@ -61,6 +61,7 @@
 //     for (int l = 0; l < (size1 + size2);l++){
 //         printf("%d ", result[l]);    
 //     }
+    // free(result)
 
 // }
 
