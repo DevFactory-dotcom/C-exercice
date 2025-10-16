@@ -31,6 +31,8 @@
 //         alphabet[i] = 97 + i;  
 //         printf("%c ", alphabet[i]);
 //     }
+// 
+//     ascii[26] = '\0';
 //     free(alphabet);
 // }
 
