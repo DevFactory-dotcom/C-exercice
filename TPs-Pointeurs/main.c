@@ -15,9 +15,10 @@
 
 // int numbers[5] = {1,8,0,6,3};
 
-// void swap(int value1, int value2){
-//     int *swap1 = &value2;
-//     int *swap2 = &value1;
+// void swap(int *value1, int *value2){
+//     int c = *value1;
+//     *value1 = *value2;
+//     *value2 = c;
 
 
 //     printf("La valeur 1 est : %d. La valeur 2 est : %d.",*swap1,*swap2);
